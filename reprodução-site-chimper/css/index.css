@@ -1,0 +1,527 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* HEADER */
+
+#header-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: ROW;
+    height: 4vh;
+    border-bottom: solid 1px;
+    color: lightslategray;
+}
+
+#list a{
+    text-decoration: none;
+    color: gray;
+}
+
+#contact-header{
+    display: flex;
+    flex-direction: ROW;
+    list-style: none;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+#social-header{
+    display: flex;
+    flex-direction: ROW; 
+    list-style: none;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.icons{
+    margin-left: 2vh;
+}
+
+#contact-header li{
+    margin-left: 2vh;
+}
+
+#contact-header b{
+    color: gray;
+}
+
+.icons svg:hover{
+    cursor: pointer;
+}
+
+#logo{
+    list-style: none;
+    display: flex;
+    flex-direction: ROW;
+    cursor: pointer;
+    color: black;
+}
+
+#list{
+    list-style: none;
+    display: flex;
+    flex-direction: ROW;
+    align-content: center;
+    justify-content: space-evenly;
+    color: gray;
+}
+
+#list li{
+    margin-left: 2vh;
+}
+
+#header-2{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    height: 8vh;
+    align-items: center;
+    font-size: 2vh;
+}
+
+#dropmenu{
+    position: relative;
+    text-align: left;
+}
+
+#droplist{
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    width: 300%;
+    opacity: 0;
+    transition: 1s;
+    background-color: white;
+}
+
+#droplist >li{
+    height: 4vh;
+    padding-top: 1vh;
+    color: black;
+    background-color: white;
+}
+
+#droplist>li:hover{
+    background-color: rgb(223, 223, 223);
+}
+
+#dropmenu:hover #droplist{
+    opacity: 1;
+    z-index: 99;
+    border: solid 1px lightslategray;
+}
+
+#list>li:hover{
+    color: rgb(13, 12, 181);
+    opacity: 100%;
+    cursor: pointer;
+}
+
+#header-3 img{
+    width: 100%;
+    height: 95vh;
+    filter: brightness(50%);
+    position: absolute;
+    z-index: -10;
+}
+
+#header-4{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#header-4 h2{
+    text-align: center;
+    color: white;
+    font-size: 6vh;
+    line-height: 3.5rem;
+}
+
+#header-4 h5{
+    text-align: center;
+    color: white;
+    filter: brightness(70%);
+    font-size: 2vh;
+}
+
+#header-4 h6{
+    text-align: center;
+    color: white;
+    background-color: rgb(13, 12, 181);
+    height: 4vh;
+    width: 8vh;
+    border-radius: 8vh;
+    line-height: 40px;
+}
+
+#header-4 h6:hover{
+    background-color: rgb(5, 5, 116);
+    cursor: pointer;
+}
+
+/* SECTION 1 */
+
+#sec1{
+    background-color: black;
+    color: white;
+    display: grid;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    top: 20%;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    height: 80vh;
+}
+
+#b1-sec1{
+    display: flex;
+    flex-direction: column;
+}
+
+#b2-sec1{
+    display: flex;
+    flex-direction: column;
+}
+
+#b3-sec1{
+    display: flex;
+    flex-direction: column;
+}
+
+#b4-sec1{
+    display: flex;
+    flex-direction: column;
+}
+
+#img-sec1{ 
+    grid-row: span 3;
+    text-align: center;
+}
+
+#img-sec1 img{
+    margin-top: 10%;
+    width: 80%;
+}
+
+#title-sec1{
+    grid-column: span 3;
+    display: flex;
+}
+
+#section1{
+    width: 100%;
+    background: white;
+    height: 90vh;
+    position: relative;
+}
+
+.text-sec1 h3{
+    color: white;
+    margin-top: 1.5vh;
+}
+
+.text-sec1 h2{
+    margin-top: 1.5vh;
+    font-size: 2.5vh;
+    color: gray;
+}
+
+#title-sec1 h3{
+    display: flex;
+    margin-top: 1.5vh;
+    margin-left: 1.5vh;
+}
+
+#title-sec1 svg{
+    grid-row: span 2;
+    display: flex;
+    margin-right: 10px;
+    fill: blue;
+}
+
+/* SECTION 2 */
+
+#section2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#section2 a{
+    position: absolute;
+    font-size: 15vh;
+    opacity: 0.2;
+    margin-top: -8vh;
+    margin-left: -8vh;
+}
+
+
+/* SECTION 3 */
+
+.title-sec3{
+    margin-top: 25vh;
+    text-align: center;
+    font-size: 8.5vh;
+}
+
+#img-sec3{
+    display: flex;
+    justify-content: space-around ;
+    margin-top: 10vh;
+    filter: brightness(100%);
+}
+
+#img1-sec3:hover{
+    filter: brightness(20%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+#img2-sec3:hover{
+    filter: brightness(20%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+#img3-sec3:hover{
+    filter: brightness(20%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+#sub-sec3{
+    margin-top: 5vh;
+    text-align: center;
+    color: gray;
+    font-size: 2.5vh;
+    opacity: 80%;
+}
+
+section hr{
+    margin-left: 45%;
+    margin-right: 50%;
+    height: 3px;
+    color: rgb(13, 12, 181);;
+    background-color: rgb(13, 12, 181);;
+}
+
+#button-sec3{
+    text-align: center;
+    color: white;
+    background-color: rgb(13, 12, 181);
+    height: 4vh;
+    width: 20vh;
+    border-radius: 8vh;
+    line-height: 40px;
+    margin-top: 5vh;
+    margin-left: 45%;
+    margin-right: 50%;
+}
+
+#button-sec3:hover{
+    background-color: rgb(5, 5, 116);
+    cursor: pointer;
+}
+
+/* SECTION 4 */
+
+#section4 p{
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 2.5vh;
+}
+
+#img-sec4{
+    border-radius: 100%;
+    height: 5vh;
+    width: 5vh;
+    margin-right: 30px;
+}
+
+#article-sec4{
+    margin-top: 5vh;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+#article-sec4 p{
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+}
+
+/* SECTION 5 */
+
+#nav-sec5{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    justify-content: space-evenly;
+}
+
+#art1-sec5{
+    display: flex;
+    flex-direction: column;
+}
+
+#art2-sec5{
+    display: flex;
+    flex-direction: column;
+}
+
+#art3-sec5{
+    display: flex;
+    flex-direction: column;
+}
+
+.sec5-h2{
+    color: rgb(13, 12, 181);;
+    margin-top: 2vh;
+}
+
+.sec5-h2:hover{
+    cursor: pointer;
+}
+
+.sec5-h4-1{
+    color: gray;
+    opacity: 80%;
+    margin-top: 1vh;
+    font-size: 1.5vh;
+}
+
+.sec5-h4-1 a{
+    color: rgb(13, 12, 181);;
+}
+
+.sec5-h4-1 a:hover{
+    cursor: pointer;
+}
+
+.sec5-h3{
+    margin-top: 3vh;
+    opacity: 90%;
+}
+
+.sec5-h4-2{
+    margin-top: 2vh;
+    color: rgb(13, 12, 181);;
+}
+
+.sec5-h4-2:hover{
+    cursor: pointer;
+}
+
+/* SECTION 6 */
+
+#section6{
+    background-color: rgb(13, 12, 181);
+    text-align: center;
+    color: white;
+    margin-top: 8vh;
+    height: 9vh;
+    display: flex;
+}
+
+#sec6-h2{
+    align-self: center;
+    margin-left: 40%;
+    margin-right: 30%;
+    font-size: 3vh;
+}
+
+#section6:hover{
+    background-color: rgb(5, 5, 116);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(46, 46, 46);
+    width: 100%;
+    height: 60vh;
+}
+
+#art-footer ul{
+    margin-top: 10vh;
+}
+
+#art-footer{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    font-size: 1.8vh;
+}
+
+#footer-ul3 svg{
+    fill: rgb(143, 143, 143);
+    margin-right: 2vh;
+}
+
+#footer-ul3 svg:hover{
+    fill: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#art-footer li{
+    list-style: none;
+    margin-top: 1vh;
+}
+
+.footer-li{
+    color: rgb(143, 143, 143);
+}
+
+.footer-li-1{
+    color: white;
+    margin-bottom: 2vh;
+}
+
+.footer-li-hover:hover{
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#hr-footer{
+    color: rgb(117, 117, 117);
+    opacity: 50%;
+    width: 90%;
+    margin-top: 15vh;
+    margin-left: 10vh;
+}
+
+footer h4{
+    color: rgb(117, 117, 117);
+    text-align: center;
+    margin-top: 4vh;
+}
+
+#footer-submit{
+    border-radius: 2vh;
+    background-color:rgb(13, 12, 181);
+    color: white;
+    border-color: rgb(46, 46, 46);
+    border-style: solid;
+}
+
+#footer-email{
+    border-radius: 2vh;
+    background-color: rgb(46, 46, 46) ;
+    border-color: gray;
+    border-style: solid;
+}
